@@ -1,6 +1,6 @@
 # Portfolio — Gary (Chaoxian) Xiao
 
-Data scientist and AI engineer with a Ph.D. in computational chemistry. Most of my recent work is about one question: **how do you know an AI system actually works?** Each project below has a baseline, a held-out or pre-registered evaluation, and a section on what didn't work.
+Data scientist and AI engineer, trained as a chemist in both the lab and computational modeling. Most of my recent work is about one question: **how do you know an AI system actually works?** Each project below has a baseline, a held-out or pre-registered evaluation, and a section on what didn't work.
 
 I build with AI coding agents (Claude Code, Codex, Cursor). I design the systems and experiments, set the evaluation rules, and review the results.
 
@@ -53,7 +53,7 @@ Benchmarked four open-source pinyin engines, then reranked libime's N-best candi
 
 - Senior Data Scientist, Bluestem Brands (Fingerhut), 2023–2025: XGBoost credit, payment and customer-behavior models; stress testing and swap analysis; model-monitoring dashboards.
 - Co-founder / scientist at two small analytics companies: churn and sales forecasting.
-- Postdoc and Assistant Scientist, Iowa State University: computational chemistry and ML for materials. Papers in JACS and ACS Catalysis ([Scholar](https://scholar.google.com/citations?user=85iI4ZQAAAAJ)).
+- Postdoc and Assistant Scientist, Iowa State University: experimental and computational chemistry. Synthesized and tested materials for energy, environmental and catalytic applications (intermetallic and supported-metal catalysts, nanoparticles), and studied them with computational chemistry, machine learning and data analysis. Papers in JACS and ACS Catalysis ([Scholar](https://scholar.google.com/citations?user=85iI4ZQAAAAJ)).
 - Ph.D. Physical Chemistry / Computer Modeling, Peking University.
 
 [LinkedIn](https://www.linkedin.com/in/garycxiao/)
