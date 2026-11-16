@@ -1,12 +1,12 @@
-# OpenPDF — a local PDF editor for people and a PDF toolkit for AI agents
+# Local PDF Toolkit — a local PDF editor for people and a PDF toolkit for AI agents
 
 *AI engineering · document AI · product engineering* · Sep–Nov 2026 · Python, Java, Rust/WASM, JavaScript · [installers (v0.2.0)](https://github.com/gary1381/openpdf-releases) · [code](https://github.com/gary1381/local-pdf-toolkit)
 
-> "OpenPDF" is a working name.
+> The v0.2.0 installers were released under the earlier working name "OpenPDF".
 
 ## What it is
 
-OpenPDF runs entirely on your own computer, so documents are never uploaded. It has two faces:
+Local PDF Toolkit runs entirely on your own computer, so documents are never uploaded. It has two faces:
 - **For people:** a desktop app (Linux .deb / AppImage) and a browser version that runs in WebAssembly.
 - **For programs and AI agents:** a REST API, plus an MCP server that packages the same features as tools for Claude, Cursor and other agents.
 
@@ -33,12 +33,12 @@ The browser build runs the same services in a Web Worker, using PDFium compiled 
 | System | Average of 6 non-math categories | Seconds per page |
 |---|---|---|
 | Docling 2, default settings | 71.6 | 19.0 |
-| **OpenPDF `pdf_read_markdown`** | **71.3** | **7.8 (CPU only)** |
+| **Local PDF Toolkit `pdf_read_markdown`** | **71.3** | **7.8 (CPU only)** |
 | PyMuPDF4LLM 2.0 | 50.2 | 2.4 |
 | *Marker v1.6.2 / Mistral OCR / GPT-4o (published figures)* | *71.4 / 71.9 / 71.9* | |
 | *olmOCR (published)* | *78.0* | |
 
-- OpenPDF matches Docling's accuracy at about 2.4× the speed. On the non-math categories it is level with the published Marker, Mistral OCR and GPT-4o figures.
+- Local PDF Toolkit matches Docling's accuracy at about 2.4× the speed. On the non-math categories it is level with the published Marker, Mistral OCR and GPT-4o figures.
 - Its Markdown output beats its own plain-text output by 17 points and PyMuPDF4LLM by 10.
 - **Weak spots:** formulas (no LaTeX output, so the two math categories score 0) and old typewritten scans.
 
@@ -46,7 +46,7 @@ The browser build runs the same services in a Web Worker, using PDFium compiled 
 
 | Tool | Clean documents (of 13) |
 |---|---|
-| **OpenPDF, desktop and browser** | **13** |
+| **Local PDF Toolkit, desktop and browser** | **13** |
 | PdfCraft 0.18.2, with Sanitize | 13 (but it removes every comment, bookmark and attachment) |
 | Stirling-PDF 3.2.1, convert to image | 10 (and the text is no longer searchable) |
 | PyMuPDF 2.0 + `scrub()` | 9 |

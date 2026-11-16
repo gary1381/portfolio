@@ -1,4 +1,4 @@
-# DS Harness — making AI agents' data analysis verifiable
+# DS Agent Harness — making AI agents' data analysis verifiable
 
 *Data science · experiment design · AI evaluation* · Oct–Nov 2026 · Python · [code](https://github.com/gary1381/ds-agent-harness)
 

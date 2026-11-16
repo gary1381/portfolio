@@ -1,4 +1,4 @@
-# Precision Memory — long-term memory for AI coding agents
+# Agent Memory (pm1) — long-term memory for AI coding agents
 
 *AI engineering · information retrieval · evaluation* · Oct–Nov 2026 · Python · [code](https://github.com/gary1381/agent-memory-pm1)
 
@@ -26,9 +26,9 @@ Coding agents (Claude Code, Codex, Cursor) start every session without memory of
 
 | System | Accuracy | LLM calls to ingest |
 |---|---|---|
-| Precision Memory + LLM fact index (evaluation variant) | 92.2% | about 1/23 of Mem0's |
+| pm1 + LLM fact index (evaluation variant) | 92.2% | about 1/23 of Mem0's |
 | Mem0 2.2.1 | 90.6% | 6,453 |
-| **Precision Memory, LLM-free (production)** | **89.4%** | **0** |
+| **pm1, LLM-free (production)** | **89.4%** | **0** |
 | Hindsight 1.0.0 | 85.7% | 742 |
 | Graphiti 0.31.2 | 71.6% | 18,835 |
 

@@ -6,28 +6,28 @@ I build with AI coding agents (Claude Code, Codex, Cursor). I design the systems
 
 ## Projects
 
-### Precision Memory — long-term memory for AI coding agents
-*AI engineering · retrieval · evaluation* · [case study](projects/precision-memory.md) · [code](https://github.com/gary1381/agent-memory-pm1)
+### Agent Memory (pm1) — long-term memory for AI coding agents
+*AI engineering · retrieval · evaluation* · [case study](projects/agent-memory-pm1.md) · [code](https://github.com/gary1381/agent-memory-pm1)
 
-Coding agents forget earlier sessions. Popular memory systems call an LLM on every write. Precision Memory ingests with no LLM calls and retrieves with BM25, embeddings, session summaries and a cross-encoder reranker, served to Claude Code, Codex and Cursor over MCP.
+Coding agents forget earlier sessions. Popular memory systems call an LLM on every write. pm1 ingests with no LLM calls and retrieves with BM25, embeddings, session summaries and a cross-encoder reranker, served to Claude Code, Codex and Cursor over MCP.
 
 | LoCoMo, 1,540 questions, 4K-token budget | Answer accuracy | LLM calls to ingest |
 |---|---|---|
 | Mem0 2.2.1 | 90.6% | 6,453 |
-| **Precision Memory (LLM-free)** | **89.4%** | **0** |
-| Precision Memory + fact index (eval path) | 92.2% | ~1/23 of Mem0 |
+| **pm1 (LLM-free)** | **89.4%** | **0** |
+| pm1 + fact index (eval path) | 92.2% | ~1/23 of Mem0 |
 | Hindsight 1.0.0 | 85.7% | 742 |
 | Graphiti 0.31.2 | 71.6% | 18,835 |
 
 Same answer model for every system, blind LLM judging, paired bootstrap 95% intervals. On LongMemEval-S retrieval, all evidence is in the top 5 for 92.3% of questions, against 84.7% for a BM25 baseline. **Limits:** it trails Mem0 by about 11 points on BEAM-1M long-conversation summaries, and median production retrieval takes about 3.7 s, mostly reranking.
 
-### OpenPDF — a local PDF editor for people and a PDF toolkit for AI agents
-*AI engineering · document AI · product* · [case study](projects/openpdf.md) · [code](https://github.com/gary1381/local-pdf-toolkit) · [installers v0.2.0](https://github.com/gary1381/openpdf-releases)
+### Local PDF Toolkit — a local PDF editor for people and a PDF toolkit for AI agents
+*AI engineering · document AI · product* · [case study](projects/local-pdf-toolkit.md) · [code](https://github.com/gary1381/local-pdf-toolkit) · [installers v0.2.0](https://github.com/gary1381/openpdf-releases) (released as "OpenPDF")
 
-A desktop app and browser editor that runs entirely on your own computer, plus REST and MCP tools so AI agents can read, OCR, fill, sign and redact PDFs. On olmOCR-Bench (1,403 PDFs) its Markdown for agents scores 71.3 on the non-math categories, level with Docling (71.6) at 2.4× the speed and ahead of PyMuPDF4LLM (50.2). In a 13-document redaction test, nothing leaked from OpenPDF's output, while PyMuPDF and Stirling-PDF left secrets in 4–5 documents.
+A desktop app and browser editor that runs entirely on your own computer, plus REST and MCP tools so AI agents can read, OCR, fill, sign and redact PDFs. On olmOCR-Bench (1,403 PDFs) its Markdown for agents scores 71.3 on the non-math categories, level with Docling (71.6) at 2.4× the speed and ahead of PyMuPDF4LLM (50.2). In a 13-document redaction test, nothing leaked from the toolkit's output, while PyMuPDF and Stirling-PDF left secrets in 4–5 documents.
 
-### DS Harness — making AI agents' data analysis verifiable
-*Data science · experiment design* · [case study](projects/ds-harness.md) · [code](https://github.com/gary1381/ds-agent-harness)
+### DS Agent Harness — making AI agents' data analysis verifiable
+*Data science · experiment design* · [case study](projects/ds-agent-harness.md) · [code](https://github.com/gary1381/ds-agent-harness)
 
 A thin layer between an AI agent and the data (context, verification, delivery gates, an append-only registry), plus an evaluation loop that tests whether it really reduces answers that *look* right but are wrong. About 4,100 real-agent runs (Claude Code, Codex) across seven pre-registered experiments, with blind questions and blind two-model labels.
 
