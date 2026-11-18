@@ -46,6 +46,15 @@ Benchmarked four open-source pinyin engines, then reranked libime's N-best candi
 | + BERT rerank, top 3 | 80.0% | 1.3e-5 |
 | + BERT rerank, all ~16 candidates | 83.9% | 4.6e-8 |
 
+### rankai — a bilingual job and collaboration search engine
+*Search and ranking · data pipelines · evaluation* · [case study](projects/rankai.md) · [code](https://github.com/gary1381/rankai)
+
+Ingests postings from 15 public sources (82,169 postings in 7,298 duplicate clusters on 2026-11-17), ranks them with BM25 + e5 retrieval, an LLM query rewrite, a cross-encoder reranker and a learned ranker, and serves them to AI agents over MCP. Every change was tested on 48 new queries written by other models, labeled blind by two LLMs.
+
+- On the confirmation round, ordering by the reranker alone scored nDCG@10 0.785 vs 0.654 for the hand-tuned stack (Holm-adjusted p = 0.0009).
+- The LLM query rewrite was the largest single gain (+0.250; Chinese queries 0.37 → 0.80). Two pre-registered tests failed and are reported.
+- The main finding: coverage, not ranking, was the bottleneck. Only 15 of 48 queries had any good posting, so the agent tool now says when no good match exists.
+
 ### Earlier (2024)
 - [Text summarizer](https://github.com/gary1381/Text_summarizer) (fine-tuned Pegasus) · [Streamlit chatbot](https://github.com/gary1381/chatbot_streamlit)
 
