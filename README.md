@@ -61,7 +61,7 @@ Ingests postings from 15 public sources (82,169 postings in 7,298 duplicate clus
 ## Background
 
 - Senior Data Scientist, Bluestem Brands (Fingerhut), 2023–2025: XGBoost credit, payment and customer-behavior models; stress testing and swap analysis; model-monitoring dashboards.
-- Co-founder / scientist at two small analytics companies: churn and sales forecasting.
+- Co-founder / scientist at two small companies: data analysis, modeling, R&D.
 - Postdoc and Assistant Scientist, Iowa State University: experimental and computational chemistry. Synthesized and tested materials for energy, environmental and catalytic applications (intermetallic and supported-metal catalysts, nanoparticles), and studied them with computational chemistry, machine learning and data analysis. Papers in JACS and ACS Catalysis ([Scholar](https://scholar.google.com/citations?user=85iI4ZQAAAAJ)).
 - Ph.D. Physical Chemistry / Computer Modeling, Peking University.
 
